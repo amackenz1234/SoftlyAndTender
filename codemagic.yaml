@@ -10,7 +10,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.andrewmackenzie.softlyandtender
+        bundle_identifier: com.softlyandtender.app
       xcode: latest
 
     scripts:
@@ -25,7 +25,6 @@ workflows:
 
     artifacts:
       - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
 
     publishing:
       app_store_connect:
